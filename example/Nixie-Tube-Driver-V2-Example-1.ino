@@ -5,8 +5,7 @@
 //
 // This example demonstrates how to control two nixie tubes and two dots.
 // The control is carried out using one Nixie Tube Driver V2.
-// How to use: 
-//
+// How to connect nixie tubes: http://bit.ly/How2DriveNixieTubes 
 
 #define DIN_PIN   5          // Nixie driver (shift register) serial data input pin             
 #define CLK_PIN   6          // Nixie driver clock input pin
