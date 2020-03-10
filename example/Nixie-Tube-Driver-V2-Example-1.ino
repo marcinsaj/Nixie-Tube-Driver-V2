@@ -15,7 +15,7 @@
 boolean nixieDisplayArray[24];
 
 // Cathodes assignment to the position in the 24 bit array
-// Each cathode of nixie tubes is connected to the corresponding output of the corresponding shift register
+// Each cathode of nixie tubes is connected to the corresponding output of the shift registers
 // Bit numbers
 byte nixie1[]={
 //   0   1   2   3   4   5   6   7   8   9  
