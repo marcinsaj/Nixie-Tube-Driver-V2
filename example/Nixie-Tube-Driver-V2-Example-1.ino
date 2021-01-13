@@ -3,15 +3,15 @@
 //
 // Driving Nixie Tubes Example #1
 //
-// This example demonstrates how to control two nixie tubes and two dots.
+// This example demonstrates how to control 2 nixie tubes.
 // The control is carried out using one Nixie Tube Driver V2.
-// How to connect nixie tubes: http://bit.ly/How2DriveNixieTubes 
+// How to connect nixie tubes: http://bit.ly/How2Drive2NixieTubes
 
 #define DIN_PIN   5          // Nixie driver (shift register) serial data input pin             
 #define CLK_PIN   6          // Nixie driver clock input pin
 #define EN_PIN    7          // Nixie driver enable input pin
 
-// Bit array for 2 nixie tubes, dot1, dot2, 2 bits for gaps
+// Bit array for 2 nixie tubes, 2 not connected outputs, 2 bits for gaps
 boolean nixieDisplayArray[24];
 
 // Cathodes assignment to the position in the 24 bit array
@@ -24,8 +24,6 @@ byte nixie2[]={
 //   0   1   2   3   4   5   6   7   8   9
     10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
 
-byte dot1 = 20;   // K21 nixie driver output
-byte dot2 = 21;   // K22
 
 void setup() 
 {  
@@ -42,11 +40,7 @@ void setup()
 void loop ()
 {
   // NixieDisplay(digit1, digit2);
-  NixieDisplay(2, 0);
-
-  // SetDot (dotNumber = 1/2, dotState = 0/1)
-  SetDot(1, HIGH);
-  delay(1000);     
+  NixieDisplay(2, 0);  
 }
 
 void NixieDisplay(byte digit1, byte digit2)
@@ -55,32 +49,15 @@ void NixieDisplay(byte digit1, byte digit2)
   digit1 = nixie1[digit1];
   digit2 = nixie2[digit2];
 
-  // Clear bit array except dot1 and dot2 bits  
+  // Clear bit array
   for (int i = 23; i >= 0; i--)
   {
-    if(i != dot1 || i != dot2) nixieDisplayArray[i] = 0;      
+    nixieDisplayArray[i] = 0;      
   }
     
   // Set the bits corresponding to the nixie tubes cathodes
   nixieDisplayArray[digit1] = 1;
   nixieDisplayArray[digit2] = 1;
-  
-  ShiftOutData();
-}
-
-void SetDot(byte dotNumber, boolean dotState)
-{
-  if(dotNumber == 1)  
-  {
-    if(dotState == HIGH) nixieDisplayArray[dot1] = 1;
-    else nixieDisplayArray[dot1] = 0;  
-  }
-  
-  if(dotNumber == 2)  
-  {
-    if(dotState == HIGH) nixieDisplayArray[dot2] = 1;
-    else nixieDisplayArray[dot2] = 0;  
-  }
   
   ShiftOutData();
 }
