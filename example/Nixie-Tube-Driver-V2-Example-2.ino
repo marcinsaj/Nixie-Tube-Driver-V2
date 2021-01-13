@@ -1,11 +1,11 @@
 // Nixie Tube Driver V2 by Marcin Saj https://nixietester.com
 // https://github.com/marcinsaj/Nixie-Tube-Driver-V2 
 //
-// Driving Nixie Tubes Example #1
+// Driving Nixie Tubes Example #2
 //
 // This example demonstrates how to control two nixie tubes.
 // The control is carried out using one Nixie Tube Driver V2.
-// How to connect nixie tubes: http://bit.ly/How2Drive2NixieTubes
+// How to connect nixie tubes: http://bit.ly/How2Drive2NixieTubes2Dots
 
 #define DIN_PIN   5          // Nixie driver (shift register) serial data input pin             
 #define CLK_PIN   6          // Nixie driver clock input pin
