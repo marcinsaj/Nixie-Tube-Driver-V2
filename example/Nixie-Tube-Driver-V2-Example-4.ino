@@ -18,7 +18,7 @@
 // 2 bits for gaps
 boolean nixieDisplayArray[48];
 
-// Cathodes assignment to the position in the 24 bit array
+// Cathodes assignment to the position in the 48 bit array
 // Each cathode of nixie tubes is connected to the corresponding output of the shift registers
 // Bit numbers
 byte nixie1[]={
