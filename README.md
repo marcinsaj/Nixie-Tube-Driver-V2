@@ -1,4 +1,5 @@
-<a href="https://www.buymeacoffee.com/marcinsaj"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=marcinsaj&button_colour=75b8fa&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" /></a>
+<a href="https://www.buymeacoffee.com/marcinsaj"><img src="https://github.com/marcinsaj/marcinsaj/blob/main/Buy-me-a-coffee.png" /></a> 
+</br>
 
 # Nixie-Tube-Driver-V2
 * <a target="_blank" href="https://github.com/marcinsaj/Nixie-Tube-Driver-V2/blob/master/example/Nixie-Tube-Driver-V2-Example-1.ino">How to Drive 2 Nixie Tubes - Code Example</a>
