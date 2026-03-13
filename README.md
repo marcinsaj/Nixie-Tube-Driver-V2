@@ -1,6 +1,3 @@
-<a href="https://www.buymeacoffee.com/marcinsaj"><img src="https://github.com/marcinsaj/marcinsaj/blob/main/Buy-me-a-coffee.png" /></a> 
-</br>
-
 # Nixie-Tube-Driver-V2
 * <a target="_blank" href="https://github.com/marcinsaj/Nixie-Tube-Driver-V2/blob/master/example/Nixie-Tube-Driver-V2-Example-1.ino">How to Drive 2 Nixie Tubes - Code Example</a>
 * <a target="_blank" href="https://github.com/marcinsaj/Nixie-Tube-Driver-V2/blob/master/datasheet/How-To-Drive-2-Nixie-Tubes-Nixie-Tube-Driver-V2.pdf">How to Drive 2 Nixie Tubes - Schematic</a>
